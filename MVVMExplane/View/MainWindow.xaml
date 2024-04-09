@@ -20,19 +20,19 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel>
-            <TextBlock Text="Vorname" FontWeight="Bold"/>
+            <TextBlock Text="Firstname" FontWeight="Bold"/>
             <TextBox Text="{Binding Person.SureName}"/>
 
-            <TextBlock Text="Nachname" FontWeight="Bold"/>
+            <TextBlock Text="Lastname" FontWeight="Bold"/>
             <TextBox Text="{Binding Person.LastName}"/>
 
-            <TextBlock Text="Kinder" FontWeight="Bold"/>
+            <TextBlock Text="Childs" FontWeight="Bold"/>
             <ListView ItemsSource="{Binding Person.Childs}"></ListView>
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <Button Content="Lösche Vor- und Nachnamen" Command="{Binding ClearName}"/>
-            <Button Content="Lösche Kindernamen"  Command="{Binding DeleteChildName}"/>
-            <Button Content="Reset Daten"  Command="{Binding ResetData}"/>
+            <Button Content="Delete first and last names" Command="{Binding ClearName}"/>
+            <Button Content="Delete children's names"  Command="{Binding DeleteChildName}"/>
+            <Button Content="Reset data"  Command="{Binding ResetData}"/>
         </StackPanel>
         
     </Grid>
